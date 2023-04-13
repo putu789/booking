@@ -1,10 +1,10 @@
 <?php 
 if (preg_match ('/config.php/', basename($_SERVER['PHP_SELF']))) die ('Unable to access this script directly from browser!');
 
-define('DB_HOST', '10.5.50.14');
+define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'asysyifa');
-define('DB_NAME', 'sik');
+define('DB_PASS', '');
+define('DB_NAME', '');
 
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME); 
 
